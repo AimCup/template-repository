@@ -5,6 +5,8 @@ server:
   servlet:
     context-path: /example-path
   port: 0
+  error:
+    include-message: always
 spring:
   application:
     name: example-microservice
