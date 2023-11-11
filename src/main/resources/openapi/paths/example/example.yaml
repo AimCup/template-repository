@@ -11,7 +11,7 @@ get:
           schema:
             type: array
             items:
-              $ref: '../../models/example/example-data-response.yaml#/ExampleDataResponse'
+              $ref: '../../models/example/ExampleDataResponse.yaml#/ExampleDataResponse'
 
 post:
   tags:
@@ -22,7 +22,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../../models/example/example-data-request.yaml#/ExampleDataRequest'
+          $ref: '../../models/example/ExampleDataRequest.yaml#/ExampleDataRequest'
   responses:
     '200':
       description: OK

@@ -5,13 +5,15 @@ server:
   servlet:
     context-path: /example-path
   port: 0
+  error:
+    include-message: always
 spring:
   application:
     name: example-microservice
   datasource:
-    url: jdbc:postgresql://localhost:5455/example-db-name
-    username: testUser
-    password: testPassword
+    url: jdbc:postgresql://localhost:5301/example
+    username: admin
+    password: admin
     driver-class-name: org.postgresql.Driver
     hikari:
       connection-timeout: 10000
